@@ -64,7 +64,7 @@ const App = () => {
     }).catch((e) => {
       console.log("failed to check if wallet has cast vote", e);
     })
-  }, [hasClaimedNFT])
+  }, [address, hasClaimedNFT, proposals])
 
   useEffect(() => {
     sdk.setProviderOrSigner(signer);
